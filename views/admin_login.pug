@@ -1,0 +1,19 @@
+extends layout
+block content
+    
+    .row.mt-5
+        .col-sm-12
+            h5 Admin Login
+        .col-sm-8
+            p This is an admin login area, only store managers with authorization are able to use this feature.
+            small If you are not one please use the authorized access
+        .col-sm-4
+            h5 Admin Login
+            form
+                .form-group
+                    label Email:
+                    input.form-control(name='name', type='email')
+                .form-group
+                    label Password:
+                    input.form-control(name='name', type='password')
+                input.btn.btn-primary(type='submit',value='Login')
