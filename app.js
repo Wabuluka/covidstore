@@ -26,7 +26,10 @@ app.use('/users', userRoutes);
 app.use('/', indexRoutes);
 app.use('/admin', adminRoutes);
 
-
+// 404 error
+app.get('*', function(req, res) { 
+    res.render('404');
+});
 
 // Start Server
 app.listen(3000, function(){
