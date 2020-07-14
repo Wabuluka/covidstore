@@ -9,7 +9,7 @@ block content
             small If you are not one please use the authorized access
         .col-sm-4
             h5 Admin Login
-            form
+            form(action="/admin/login" method="POST")
                 .form-group
                     label Email:
                     input.form-control(name='name', type='email')
